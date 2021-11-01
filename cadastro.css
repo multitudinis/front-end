@@ -1,0 +1,38 @@
+.cadastro {
+    height: 83vh;
+    border-radius: 12px;
+}
+
+.btn:hover {
+    background-color: #034131;
+    cursor: pointer;
+  }
+
+label {
+    color: #1BBA93;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input, button {
+    border-radius: 18px 4px;
+    width: 95vw;
+    height: 7vh;
+    accent-color: #1BBA93;
+    box-shadow: 9px 9px 1px gray;
+}
+
+
+.element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background: linear-gradient(to right, #ffffff 0%, #1BBA93 50%, #7780fc 99%);
+    color: white;
+    font-size: 27px;
+    font-weight: 700;
+    border-radius: 18px;
+    width: 97vw;
+    height: 15vh;
+}

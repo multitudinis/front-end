@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="novoLead.css"/>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="element">
+    EloGroup
+  </div>
+  <div id="cadastro">
+    <form name="formulario" class="formulario" method="" action="">
+
+        <label>
+            <h1>
+            Novo Lead
+            </h1>
+        </label>
+        <p>
+            <label for="usuario">Nome *</label><br>
+            <input class="input" class="left" id="usuario" name="usuario" required="required"
+             type="text" placeholder="Seu Nome" />
+        </p>
+
+        <p>
+            <label for="senha">Telefone *</label><br>
+            <input class="input" class="left" id="senha" name="senha" required="required" type="tel"
+             placeholder="Ex: 81 3271 9671" />
+        </p>
+
+        <p>
+            <label for="confirmaSenha">E-mail *</label><br>
+            <input class="input" class="left" id="confirmaSenha" name="confirmaSenha" required="required"
+             type="email" placeholder="Ex: email@dominio.com" />
+        </p>
+
+        <p>
+            <button type="submit" class="btn" value="Registrar">
+               <label>
+                    Cadastrar
+               </label>
+            </button>
+        </p>
+
+    </form>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggle(this)">
+                    <label >checkAll</label>
+              </td>
+              <td>  </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" value="RPA" 
+                  class="custom">
+                  <label>  </label>
+                </div>
+              </td>
+              <td>RPA</td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <input type="checkbox" value="Produto Digital"
+                  class="custom">
+                  <label>  </label>
+                </div>
+              </td>
+              <td>Produto Digital</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" value="Analytics" 
+                  class="custom">
+                  <label>  </label>
+                </div>
+              </td>
+              <td>Analytics</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <button onclick="getValues()" class="btn"><label> Get get</label></button>
+</div>
+</body>
+<script>
+  function toggle(source) {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    for (var i = 0; i < checkboxes.length; i++) {
+      if (checkboxes[i] != source)
+        checkboxes[i].checked = source.checked;
+    }
+  }
+  function getValues() {
+  var checked = document.querySelectorAll('[class="custom"]:checked');
+  var values = [];
+  for (var i = 0; i < checked.length; i++) {
+    values.push(checked[i].value);
+  }
+  alert(values);
+}
+</script>
+
+</html>
