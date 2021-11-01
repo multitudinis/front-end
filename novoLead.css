@@ -1,52 +1,68 @@
-table, th, td {
-    border:1px solid black;
-  }
-  table{
-    width: 100%;
-  }
-
-.container{
-    width: 45vw;
-    align-items: center;
+table,
+th,
+td {
+  border: 1px solid black;
 }
 
-  #cadastro {
-    border: solid 1px rgb(252, 251, 251);
-    border-radius: 12px;
+table {
+  width: 100%;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+#cadastro {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px rgb(252, 251, 251);
+  border-radius: 12px;
+}
+
+.container {
+  margin: auto;
+  display: grid;
+  align-items: center;
+  width: 43vw;
+}
+
 
 .btn:hover {
-    background-color: #034131;
-    cursor: pointer;
-  }
+  background-color: #034131;
+  cursor: pointer;
+}
 
 label {
-    color: #1BBA93;
-    font-size: 18px;
-    font-weight: bold;
-}
-.input {
-    width: 45vw;
-    height: 7vh;
+  color: #1BBA93;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.input, button {
-    border-radius: 18px 4px;
-    accent-color: #1BBA93;
-    box-shadow: 9px 9px 1px gray;
+.input {
+  width: 45vw;
+  height: 7vh;
+}
+
+.input,
+button {
+  border-radius: 18px 4px;
+  accent-color: #1BBA93;
+  box-shadow: 9px 9px 1px gray;
 }
 
 
 .element {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    background: linear-gradient(to right, #ffffff 0%, #1BBA93 50%, #7780fc 99%);
-    color: white;
-    font-size: 27px;
-    font-weight: 700;
-    border-radius: 18px;
-    width: 97vw;
-    height: 15vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background: linear-gradient(to right, #ffffff 0%, #1BBA93 50%, #7780fc 99%);
+  color: white;
+  font-size: 27px;
+  font-weight: 700;
+  border-radius: 18px;
+  width: 97vw;
+  height: 15vh;
 }
