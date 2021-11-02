@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3da1a747b2.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="novoLead.css"/>
   <title>Document</title>
 </head>
@@ -23,82 +24,85 @@
         </label>
         <p>
             <label for="usuario">Nome *</label><br>
-            <input class="input" class="left" id="usuario" name="usuario" required="required"
+            <input class="input" class="left" required="required"
              type="text" placeholder="Seu Nome" />
         </p>
 
         <p>
             <label for="senha">Telefone *</label><br>
-            <input class="input" class="left" id="senha" name="senha" required="required" type="tel"
+            <input class="input" class="left" required="required" type="tel"
              placeholder="Ex: 81 3271 9671" />
         </p>
 
         <p>
             <label for="confirmaSenha">E-mail *</label><br>
-            <input class="input" class="left" id="confirmaSenha" name="confirmaSenha" required="required"
+            <input class="input" class="left" required="required"
              type="email" placeholder="Ex: email@dominio.com" />
-        </p>
-
-        <p>
-            <button type="submit" class="btn" value="Registrar">
-               <label>
-                    Cadastrar
-               </label>
-            </button>
         </p>
 
     </form>
 
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <table class="table table-bordered">
+        <table>
           <tbody>
             <tr>
               <td>
                 <input type="checkbox" onclick="toggle(this)">
-                    <label >checkAll</label>
+                    <label ><small>checkAll</small></label>
               </td>
               <td>  </td>
             </tr>
             <tr>
               <td>
-                <div class="custom-control custom-checkbox">
+                <div>
                   <input type="checkbox" value="RPA" 
                   class="custom">
-                  <label>  </label>
+                  
                 </div>
               </td>
-              <td>RPA</td>
+              <td><label> RPA </label></td>
             </tr>
             <tr>
               <td>
                 <div>
                   <input type="checkbox" value="Produto Digital"
                   class="custom">
-                  <label>  </label>
+                  
                 </div>
               </td>
-              <td>Produto Digital</td>
+              <td><label> Produto Digital </label></td>                  
             </tr>
             <tr>
               <td>
-                <div class="custom-control custom-checkbox">
+                <div>
                   <input type="checkbox" value="Analytics" 
                   class="custom">
-                  <label>  </label>
+                 
                 </div>
               </td>
-              <td>Analytics</td>
+              <td> <label> Analytics </label></td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <input type="checkbox" value="BPM" 
+                  class="custom">
+                 
+                </div>
+              </td>
+              <td> <label> BPM </label></td>
             </tr>
           </tbody>
         </table>
-        <button onclick="getValues()" class="btn"><label> Get get</label></button>
       </div>
-    </div>
-  </div>
 </div>
+<button onclick="getValues()" class="btn"><label> Salvar
+  <i class="fas fa-paper-plane"></i>
+</label></button>
+
 </body>
+
+
 <script>
   function toggle(source) {
     var checkboxes = document.querySelectorAll('input[type="checkbox"]');
