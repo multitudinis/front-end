@@ -11,33 +11,62 @@
 </head>
 
 <body>
+
   <div class="element">
     EloGroup
   </div>
+
   <div id="cadastro">
-    <form name="formulario" class="formulario" method="" action="">
+    <form 
+    name="formulario" 
+    class="formulario"
+    >
 
         <label>
             <h1>
             Novo Lead
             </h1>
         </label>
+
         <p>
-            <label for="usuario">Nome *</label><br>
-            <input class="input" class="left" required="required"
-             type="text" placeholder="Seu Nome" />
+            <label for="usuario">
+              Nome *
+            </label>  <br>
+
+            <input 
+            class="input" 
+            class="left" 
+            required="required"
+            type="text" 
+            placeholder="Seu Nome"
+            />
         </p>
 
         <p>
-            <label for="senha">Telefone *</label><br>
-            <input class="input" class="left" required="required" type="tel"
-             placeholder="Ex: 81 3271 9671" />
+            <label for="senha">
+              Telefone *
+            </label>  <br>   
+
+            <input 
+            class="input" 
+            class="left" 
+            required="required" 
+            type="tel"
+            placeholder="Ex: 81 3271 9671"
+            />
         </p>
 
         <p>
-            <label for="confirmaSenha">E-mail *</label><br>
-            <input class="input" class="left" required="required"
-             type="email" placeholder="Ex: email@dominio.com" />
+            <label for="confirmaSenha">
+              E-mail *
+            </label>  <br>
+            <input 
+            class="input" 
+            class="left" 
+            required="required"
+            type="email" 
+            placeholder="Ex: email@dominio.com" 
+            />
         </p>
 
     </form>
@@ -47,58 +76,92 @@
           <tbody>
             <tr>
               <td>
-                <input type="checkbox" onclick="toggle(this)">
-                    <label ><small>checkAll</small></label>
+                <input 
+                type="checkbox" 
+                onclick="toggle(this)"
+                >
+                    <label >
+                      <small>
+                        checkAll
+                      </small>
+                    </label>
               </td>
-              <td>  </td>
             </tr>
             <tr>
               <td>
                 <div>
-                  <input type="checkbox" value="RPA" 
-                  class="custom">
-                  
+                  <input
+                   type="checkbox" 
+                   value="RPA" 
+                   class="custom"
+                   >                  
                 </div>
               </td>
-              <td><label> RPA </label></td>
+              <td>
+                <label>
+                   RPA 
+                  </label>
+                </td>
             </tr>
             <tr>
               <td>
                 <div>
-                  <input type="checkbox" value="Produto Digital"
-                  class="custom">
-                  
+                  <input 
+                  type="checkbox" 
+                  value="Produto Digital"
+                  class="custom"
+                  >                  
                 </div>
               </td>
-              <td><label> Produto Digital </label></td>                  
+              <td>
+                <label>
+                   Produto Digital 
+                </label>
+              </td>                  
             </tr>
             <tr>
               <td>
                 <div>
-                  <input type="checkbox" value="Analytics" 
-                  class="custom">
-                 
+                  <input 
+                  type="checkbox" 
+                  value="Analytics" 
+                  class="custom"
+                  >                 
                 </div>
               </td>
-              <td> <label> Analytics </label></td>
+              <td> 
+                <label>
+                   Analytics 
+                </label>
+              </td>
             </tr>
             <tr>
               <td>
                 <div>
-                  <input type="checkbox" value="BPM" 
-                  class="custom">
-                 
+                  <input 
+                  type="checkbox" 
+                  value="BPM" 
+                  class="custom"
+                  >                 
                 </div>
               </td>
-              <td> <label> BPM </label></td>
+              <td>
+                 <label>
+                    BPM 
+                </label>
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
 </div>
-<button onclick="getValues()" class="btn"><label> Salvar
+
+<button onclick="getValues()" class="btn">
+  <label> 
+    Salvar
   <i class="fas fa-paper-plane"></i>
-</label></button>
+  </label>
+</button>
 
 </body>
 
@@ -111,6 +174,7 @@
         checkboxes[i].checked = source.checked;
     }
   }
+
   function getValues() {
   var checked = document.querySelectorAll('[class="custom"]:checked');
   var values = [];
@@ -119,6 +183,6 @@
   }
   alert(values);
 }
-</script>
 
+</script>
 </html>

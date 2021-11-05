@@ -31,12 +31,10 @@ button{
   width: 45vw;
 }
 
-
 .btn:hover {
   background-color: #034131;
   cursor: pointer;
 }
-
 
 .input {
   width: 45vw;
@@ -50,8 +48,6 @@ button,
   accent-color: #1BBA93;
   box-shadow: 9px 9px 1px gray;
 }
-
-
 
 .element {
   display: grid;

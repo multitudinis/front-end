@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3da1a747b2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="cadastro.css">
-    <title>Document</title>
+    <title>Green frame</title>
 </head>
 
 <body>
@@ -15,37 +15,74 @@
         <div class="element">
             EloGroup
         </div>
-        <form name="formulario" class="formulario" method="" action="">
+
+        <form 
+        name="formulario"
+        class="formulario"
+        >
 
             <label>
                 <h1>
-                Cadastro
+                    Cadastro
                 </h1>
             </label>
             <p>
-                <label for="usuario">Usuário *</label>
-                <input id="usuario" name="usuario" required="required"
-                 type="text" placeholder="Seu nome de usuário" />
+                <label
+                 for="usuario">
+                 Usuário *
+                </label>
+
+                <input
+                 id="usuario"
+                 name="usuario"
+                 required="required"
+                 type="text"
+                 placeholder="Seu nome de usuário" 
+                />
+            </p>
+            <p>
+                <label for="senha">
+                    Senha *
+                </label>
+
+                <input
+                id="senha"
+                name="senha"
+                required="required"
+                type="text"
+                placeholder="Ex: 123Qazxcv!"
+                onblur="validate()" 
+                />
             </p>
 
             <p>
-                <label for="senha">Senha *</label>
-                <input id="senha" name="senha" required="required" type="text"
-                 placeholder="Ex: 123Qazxcv!" onblur="validate()" />
+                <label
+                for="confirmaSenha"
+                >
+                Confirmação de Senha *
+                </label>
+
+                <input 
+                id="confirmaSenha" 
+                name="confirmaSenha" 
+                required="required" 
+                type="text"
+                placeholder="Confirme sua senha"
+                />
             </p>
 
             <p>
-                <label for="confirmaSenha">Confirmação de Senha *</label>
-                <input id="confirmaSenha" name="confirmaSenha" required="required"
-                 type="text" placeholder="Confirme sua senha" />
-            </p>
-
-            <p>
-                <button type="submit" class="btn" onclick="validate2()">
-                   <label>
+                <button 
+                type="submit" 
+                class="btn" 
+                onclick="validate2()"
+                >
+                    <label>
                         Cadastrar
-                        <i class="fas fa-paper-plane"></i>
-                   </label>
+                        <i 
+                        class="fas fa-paper-plane"
+                        ></i>
+                    </label>
                 </button>
             </p>
 
@@ -57,28 +94,31 @@
     function validate() {
 
         var senha = document.formulario.senha.value;
-        
+
         var regex = /^(?=(?:.*?[A-Z]){1})(?=(?:.*?[0-9]){1})(?=(?:.*?[!@#$%*()_+^&}{:;?.]){1})(?!.*\s)[0-9a-zA-Z!@#$%;*(){}_+^&]*$/;
 
         if (senha.length < 8) {
             alert("A senha deve conter no minímo 8 digitos!");
             document.formulario.senha.focus();
             return false;
-        } else if (!regex.exec(senha)) {
+        } 
+        
+        else if (!regex.exec(senha)) {
             alert("A senha deve conter no mínimo 1 caractere em maiúsculo, 1 número e 1 caractere especial!");
             document.formulario.senha.focus();
             return false;
         }
+
         return true;
     }
-    function validate2 (){
+
+    function validate2() {
+
         var senha = document.formulario.senha.value;
         var confirmSenha = document.formulario.confirmaSenha.value;
-        console.log(confirmSenha)
-        console.log(senha)
 
-        if (confirmSenha !== senha){
-            
+        if (confirmSenha !== senha) {
+
             event.preventDefault()
             alert("Sua confirmação de senha está incorreta!")
             document.formulario.confirmaSenha.focus()

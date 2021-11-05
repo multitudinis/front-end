@@ -14,14 +14,14 @@ label {
     font-weight: bold;
 }
 
-input, button {
+input,
+ button {
     border-radius: 18px 4px;
     width: 95vw;
     height: 7vh;
     accent-color: #1BBA93;
     box-shadow: 9px 9px 1px gray;
 }
-
 
 .element {
     display: flex;
